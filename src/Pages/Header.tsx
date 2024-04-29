@@ -1,5 +1,3 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Link, withRouter } from "react-router-dom";
 
 function Header() {
