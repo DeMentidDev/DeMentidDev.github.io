@@ -27,7 +27,7 @@ function GalleryPage() {
               alt={`Code ${index + 1}`}
               className="thumb-img"
               onClick={() => setDisplayedImage(`images/${image}`)}
-              style={{ maxWidth: "128", maxHeight: "128", cursor: "pointer" }}
+              style={{ maxWidth: "50%", height: "auto", cursor: "pointer" }}
             />
           ))}
         </div>
@@ -36,7 +36,7 @@ function GalleryPage() {
             src={displayedImage}
             alt="Displayed Image"
             className="displayed-img"
-            style={{ maxWidth: "100%", maxHeight: "100%" }}
+            style={{ maxWidth: "125%", height: "auto" }}
           />
         </div>
       </main>
