@@ -23,10 +23,10 @@ function GalleryPage() {
           {images.map((image, index) => (
             <img
               key={index}
-              src={`src/assets/${image}`}
+              src={`images/${image}`}
               alt={`Code ${index + 1}`}
               className="thumb-img"
-              onClick={() => setDisplayedImage(`src/assets/${image}`)}
+              onClick={() => setDisplayedImage(`images/${image}`)}
               style={{ maxWidth: "500%", maxHeight: "500%", cursor: "pointer" }}
             />
           ))}
