@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80" />
-      <h2>NOAH DEMENT</h2>
+      <img src="images/DeMentidDev.svg" alt="DeMentidDev Logo" height="80" />
+      <h2>DeMentidDev</h2>
       <h3>
         <div className="grid-container">
           <div className="grid-item">

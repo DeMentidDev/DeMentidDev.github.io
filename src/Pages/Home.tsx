@@ -7,47 +7,15 @@ function MainContent() {
       <h2>So you've found my little abode...</h2>
       <p>
         Glad to see you here! I'm sure you're probably looking for a means to
-        see my prior experience, or are looking to get something from me, be it
-        my services in software engineering or even some artwork. That being
-        said, you've come to the right place! I'm JOHN DOE, though most people
-        just know me by Noah.
+        see my prior experience, or commission me, be it my services in software
+        engineering or even some artwork. That being said, you've come to the
+        right place! I'm Noah DeMent.
       </p>
       <h1>
         <blockquote>
           "When life gets hard, that usually means you leveled up."
         </blockquote>
       </h1>
-      <ul>
-        <p> </p>
-        <li>
-          Who exactly am I:
-          <ul>
-            <li>
-              I'm a college student who also has a hobby for modeling in 3D.
-            </li>
-          </ul>
-        </li>
-        <li>
-          As of right now, what experience do I have:
-          <ul>
-            <li>
-              I'm currently in college for a bachelor's degree in software
-              engineering, and I'm currently planning for an
-              internship/volunteer work this summer.
-            </li>
-          </ul>
-        </li>
-        <li>
-          Anything important to keep in mind:
-          <ul>
-            <li>
-              I'm an autistic adult, diagnosed at an early age, though that
-              shouldn't be a detriment to being able to work. If anything, it's
-              made me even better of a worker.
-            </li>
-          </ul>
-        </li>
-      </ul>
       <div className="sketchfab-embed-wrapper">
         <iframe
           title="AxolotlMascot"
