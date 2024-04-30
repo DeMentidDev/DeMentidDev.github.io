@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80" />
+      <img src="src/assets/town_hall_logo.gif" alt="Town Hall logo" height="80" />
       <h2>NOAH DEMENT</h2>
       <h3>
         <div className="grid-container">
