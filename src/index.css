@@ -1,7 +1,15 @@
 /* custom property */
+/* Define a variable for maximum font size */
+
 :root {
   --global-color-1: #304557;
   align-items: center;
+  --max-font-size: 16px; /* Set a base font size */
+  @media screen and (min-width: 1200px) {
+    :root {
+      --max-font-size: 32px; /* Adjust this value as needed */
+    }
+  }
 }
 
 html {
@@ -11,14 +19,12 @@ html {
 /* the styles for the elements */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 100%;
-  margin-left: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 20px;
+  font-size: 1rem; /* Base font size is 16px */
+  margin-left: 1.25%; /* Use percentages for margins */
+  margin-right: 1.25%;
   border-style: solid;
   border-color: #304557;
-  border-width: 3px;
+  border-width: 0.1875em; /* Use em for border width */
   background-color: #f7f7f7;
 }
 a:focus,
@@ -37,36 +43,37 @@ header {
     #7eb4b1 80%,
     #4d8986 100%
   );
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1.875%; /* Use percentages for padding */
+  padding-right: 1.875%;
 }
 main {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1.875%;
+  padding-right: 1.875%;
 }
 main h1 {
-  font-size: 150%;
+  font-size: 1.5em; /* Use em for font sizes */
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-  border-top: 3px double #304557;
-  border-bottom: 3px double #304557;
-  border-radius: 3px;
-  box-shadow: 7px 7px 5px gray;
+  border-top: 0.1875em double #304557; /* Use em for border width */
+  border-bottom: 0.1875em double #304557;
+  border-radius: 0.1875em; /* Use em for border radius */
+  box-shadow: 0.4375em 0.4375em 0.3125em gray; /* Use em for box shadow */
 }
 header h2 {
-  font-size: 200%;
-  color: var(--global-color-1);
-  padding-left: 30px;
-  padding-right: 30px;
+  font-size: 2.6em; /* Use em for font sizes */
+  --max-font-size: 32px color: var(--global-color-1);
+  padding-left: 1.875%;
+  padding-right: 1.875%;
   padding-top: 0.5em;
   padding-bottom: 0.25em;
   text-align: center;
   font-family: Orbitron, Bold;
 }
 header h3 {
-  font-size: 130%;
-  padding-left: 30px;
-  padding-right: 30px;
+  font-size: 1.3em; /* Use em for font sizes */
+  --max-font-size: 24px;
+  padding-left: 1.875%;
+  padding-right: 1.875%;
   padding-bottom: 0.25em;
   text-align: center;
   font-family: "Orbitron", Sans-Serif;
@@ -76,30 +83,30 @@ header img {
   padding-bottom: 1em;
 }
 .shadow {
-  text-shadow: 2px 2px 2px var(--global-color-1);
+  text-shadow: 0.125em 0.125em 0.125em var(--global-color-1); /* Use em for text shadow */
 }
 /* the styles for the main content */
 main {
   clear: left;
   border-style: solid;
   border-color: #304557;
-  border-top-width: 3px;
-  border-bottom-width: 3px;
-  border-left-width: 0px;
-  border-right-width: 0px;
+  border-top-width: 0.1875em;
+  border-bottom-width: 0.1875em;
+  border-left-width: 0;
+  border-right-width: 0;
 }
 main h1 {
-  font-size: 150%;
-  padding-top: 0.6em 0;
-  padding-bottom: 0.6em 0;
+  font-size: 1.5em; /* Use em for font sizes */
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
 }
 main h2 {
   color: var(--global-color-1);
-  font-size: 130%;
+  font-size: 1.3em; /* Use em for font sizes */
   padding: 0.5em 0 0.25em 0;
 }
 main h3 {
-  font-size: 105%;
+  font-size: 1.05em; /* Use em for font sizes */
   padding-bottom: 0.25em;
   text-align: center;
 }
@@ -110,12 +117,12 @@ main p {
   padding-bottom: 0.5em;
 }
 main blockquote {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 0.125em; /* Use em for padding */
+  padding-right: 0.125em;
   font-style: italic;
 }
 main ul {
-  padding: 0 0 0.25em 1.25em;
+  padding: 0 0 0.25em 0.625em;
 }
 main li {
   padding-bottom: 0.35em;
@@ -135,7 +142,7 @@ footer p {
 }
 
 ul {
-  padding-top: 0.6em, 0;
+  padding-top: 0.6em; /* Remove comma from padding */
 }
 
 /* Other, Link-based styles */
@@ -143,35 +150,20 @@ ul {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  padding: 10px;
+  padding: 1.25%;
 }
 .grid-item {
-  border: 0px none;
-  padding: 20px;
-  font-size: 30px;
+  border: 0;
+  padding: 1.25%;
+  font-size: 3vw; /* Use vw for font size */
   text-align: center;
 }
 
-a:link {
-  color: inherit;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:visited {
-  color: inherit;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: gray;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
+a:link,
+a:visited,
+a:hover,
 a:active {
-  color: #f7f7f7;
+  color: inherit;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -196,12 +188,12 @@ a:active {
 button {
   border: 0;
   background: rgba(150, 150, 150, 0.6);
-  text-shadow: 1px 1px 1px #f7f7f7;
-  border: 1px solid #999;
+  text-shadow: 0.0625em 0.0625em 0.0625em #f7f7f7;
+  border: 0.0625em solid #999;
   position: absolute;
   cursor: pointer;
-  top: 2px;
-  left: 2px;
+  top: 0.125em;
+  left: 0.125em;
 }
 
 .thumb-bar img {

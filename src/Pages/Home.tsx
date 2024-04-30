@@ -26,8 +26,8 @@ function MainContent() {
           execution-while-out-of-viewport
           execution-while-not-rendered
           web-share
-          width="640"
-          height="480"
+          width="480"
+          height="360"
           src="https://sketchfab.com/models/3b95672cf52545fca9943b87f04bdf92/embed"
         ></iframe>
         <p
