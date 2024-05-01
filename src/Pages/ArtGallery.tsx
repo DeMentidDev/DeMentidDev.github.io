@@ -8,10 +8,10 @@ function GalleryPage() {
   // Array of image filenames
   const images = [
     "Summer Days, Drifting Away.png",
-    "RenderVroid.png",
-    "GET_A_MEDIC.png",
-    "NadyeRaffleNoTwitHandle.png",
-    "BirdLass.png",
+    "VRoidRender.png",
+    "Fritter.png",
+    "Structor.png",
+    "Fiasco.png",
   ];
 
   return (
@@ -27,7 +27,7 @@ function GalleryPage() {
               alt={`Code ${index + 1}`}
               className="thumb-img"
               onClick={() => setDisplayedImage(`images/${image}`)}
-              style={{ maxWidth: "50%", height: "auto", cursor: "pointer" }}
+              style={{ maxWidth: "100%", height: "auto", cursor: "pointer" }}
             />
           ))}
         </div>
@@ -36,7 +36,7 @@ function GalleryPage() {
             src={displayedImage}
             alt="Displayed Image"
             className="displayed-img"
-            style={{ maxWidth: "125%", height: "auto" }}
+            style={{ maxWidth: "200%", height: "auto" }}
           />
         </div>
       </main>

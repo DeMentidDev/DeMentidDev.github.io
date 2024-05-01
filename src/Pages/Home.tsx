@@ -27,7 +27,7 @@ function MainContent() {
           execution-while-not-rendered
           web-share
           width="auto"
-          height="250"
+          height="250%"
           src="https://sketchfab.com/models/3b95672cf52545fca9943b87f04bdf92/embed"
         ></iframe>
         <p
