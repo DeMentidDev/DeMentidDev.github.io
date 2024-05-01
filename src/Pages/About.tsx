@@ -11,7 +11,7 @@ function MainContent() {
           Who exactly am I:
           <ul>
             <li>
-              I'm a college student who also has a hobby for modeling in 3D.
+              I'm a college student who also does 3D modeling for a hobby.
             </li>
           </ul>
         </li>
@@ -21,8 +21,7 @@ function MainContent() {
             <li>
               I'm currently in college for a bachelor's degree in software
               engineering, and I'm currently looking for an internship this
-              summer. While I have a hobby in 3D modeling thanks to Blender, I
-              have also learned several coding languages such as...
+              summer. I have also learned several coding languages such as...
               <ul>
                 <li>Java</li>
                 <li>C++</li>
