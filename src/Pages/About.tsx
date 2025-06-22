@@ -19,9 +19,8 @@ function MainContent() {
           As of right now, what experience do I have:
           <ul>
             <li>
-              I'm currently in college for a bachelor's degree in software
-              engineering, and I'm currently looking for an internship this
-              summer. I have also learned several coding languages such as...
+              I have graduated college with bachelor of science in software
+              engineering, and I'm currently looking for remote work (or anything local for that matter). I have also learned several coding languages such as...
               <ul>
                 <li>Java</li>
                 <li>C++</li>
@@ -32,7 +31,9 @@ function MainContent() {
                 </li>
                 <li>MySQL</li>
                 <li>Ruby</li>
-                <li>And I'm currently learning both Flutter and Swift</li>
+                <li>Flutter</li>
+                <li>C++</li>
+                <li>And I am also capable of coding Arduino like the M5Core</li>
               </ul>
             </li>
           </ul>
