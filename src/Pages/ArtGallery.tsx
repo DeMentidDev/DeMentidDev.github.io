@@ -20,31 +20,37 @@ function GalleryPage() {
       <Header />
       <main>
         <h2>Artwork and Modeling</h2>
-        <div className="thumb-bar">
-          {images.map((image, index) => (
+        <p
+          style={{
+            paddingBottom: "120px",
+          }}
+        >
+          <div className="full-img">
             <img
-              key={index}
-              src={`images/${image}`}
-              alt={`Code ${index + 1}`}
-              className="thumb-img"
-              onClick={() => setDisplayedImage(`images/${image}`)}
-              style={{
-                width: "auto",
-                height: "150px",
-                margin: "10px",
-                cursor: "pointer",
-              }}
+              src={displayedImage}
+              alt="Displayed Image"
+              className="displayed-img"
+              style={{ width: "200%", height: "auto" }}
             />
-          ))}
-        </div>
-        <div className="full-img">
-          <img
-            src={displayedImage}
-            alt="Displayed Image"
-            className="displayed-img"
-            style={{ maxWidth: "200%", height: "auto" }}
-          />
-        </div>
+          </div>
+          <div className="thumb-bar">
+            {images.map((image, index) => (
+              <img
+                key={index}
+                src={`images/${image}`}
+                alt={`Code ${index + 1}`}
+                className="thumb-img"
+                onClick={() => setDisplayedImage(`images/${image}`)}
+                style={{
+                  width: "auto",
+                  height: "8em",
+                  margin: "5px",
+                  cursor: "pointer",
+                }}
+              />
+            ))}
+          </div>
+        </p>
       </main>
       <Footer />
     </div>
