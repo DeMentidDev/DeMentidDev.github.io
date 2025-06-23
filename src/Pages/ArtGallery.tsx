@@ -3,8 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 function GalleryPage() {
-  const [displayedImage, setDisplayedImage] = useState("");
-
   // Array of image filenames
   const images = [
     "Summer Days, Drifting Away.png",
@@ -13,6 +11,9 @@ function GalleryPage() {
     "Structor.png",
     "Fiasco.png",
   ];
+
+  // Set default displayed image to the first one
+  const [displayedImage, setDisplayedImage] = useState(`images/${images[0]}`);
 
   return (
     <div>
@@ -27,7 +28,12 @@ function GalleryPage() {
               alt={`Code ${index + 1}`}
               className="thumb-img"
               onClick={() => setDisplayedImage(`images/${image}`)}
-              style={{ maxWidth: "100%", height: "auto", cursor: "pointer" }}
+              style={{
+                width: "auto",
+                height: "150px",
+                margin: "10px",
+                cursor: "pointer",
+              }}
             />
           ))}
         </div>
