@@ -40,16 +40,6 @@ function MainContent() {
             </li>
           </ul>
         </li>
-        <li>
-          Anything important to keep in mind:
-          <ul>
-            <li>
-              I'm an autistic adult, diagnosed at an early age, though that
-              shouldn't be a detriment to being able to work. If anything, it's
-              made me even better of a worker.
-            </li>
-          </ul>
-        </li>
       </ul>
     </main>
   );
