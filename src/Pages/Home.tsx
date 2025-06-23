@@ -13,7 +13,7 @@ function MainContent() {
       </p>
       <h1>
         <blockquote>
-          "When life gets hard, that usually means you leveled up."
+          "When life gets hard, that usually means you've leveled up."
         </blockquote>
       </h1>
       <div className="sketchfab-embed-wrapper">

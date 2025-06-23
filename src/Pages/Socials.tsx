@@ -4,12 +4,9 @@ import Footer from "./Footer";
 function MainContent() {
   return (
     <main>
-      <p>
-        Twitter: <a href="https://example.com">[Placeholder Link]</a>
-      </p>
-      <p>
+      {/* <p>
         Instagram: <a href="https://example.com">[Placeholder Link]</a>
-      </p>
+      </p> */}
       <p>
         Linkedin:{" "}
         <a href="https://www.linkedin.com/in/noah-d-cbu/">
