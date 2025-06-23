@@ -20,8 +20,10 @@ function MainContent() {
           <ul>
             <li>
               I have graduated college with bachelor of science in software
-              engineering, and I'm currently looking for remote work (or
-              anything local for that matter). I have also learned several
+              engineering, and I'm looking for an entry level software
+              engineering or 3D design position with a company that prides
+              itself on providing its employees with opportunity to learn and
+              explore new technology and practices. I have also learned several
               coding languages such as...
               <ul>
                 <li>Java</li>
