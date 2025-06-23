@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2024, NOAH DEMENT</p>
+      <p>Last updated: 6/22/2025, NOAH DEMENT</p>
     </footer>
   );
 }

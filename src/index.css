@@ -48,6 +48,9 @@ header {
   padding-left: 1.875%; /* Use percentages for padding */
   padding-right: 1.875%;
 }
+header img {
+  filter: drop-shadow(3px 5px 2px #304557);
+}
 main {
   padding-left: 1.875%;
   padding-right: 1.875%;
@@ -59,7 +62,7 @@ main h1 {
   border-top: 0.1875em double #304557; /* Use em for border width */
   border-bottom: 0.1875em double #304557;
   border-radius: 0.1875em; /* Use em for border radius */
-  box-shadow: 0.4375em 0.4375em 0.3125em gray; /* Use em for box shadow */
+  box-shadow: 0.4375em 0.4375em 0.3125em #304557; /* Use em for box shadow */
 }
 header h2 {
   font-size: 2em; /* Use em for font sizes */
