@@ -37,7 +37,7 @@ function MainContent() {
                 <li>Ruby</li>
                 <li>Flutter</li>
                 <li>C++</li>
-                <li>And I am also capable of coding Arduino like the M5Core</li>
+                <li>Arduino/M5Core Stack 2</li>
               </ul>
             </li>
           </ul>
