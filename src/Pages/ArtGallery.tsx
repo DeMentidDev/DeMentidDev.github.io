@@ -82,7 +82,7 @@ function GalleryPage() {
                 <img
                   src={item.src}
                   alt={`Item ${index + 1}`}
-                  style={{ Width: "100px", Height: "auto" }}
+                  style={{ width: "100px", height: "auto" }}
                 />
               ) : (
                 <span style={{ fontSize: "0.75em", textAlign: "center" }}>
