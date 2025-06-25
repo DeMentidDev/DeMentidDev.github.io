@@ -26,8 +26,8 @@ function MainContent() {
           execution-while-out-of-viewport
           execution-while-not-rendered
           web-share
-          width="auto"
-          height="250%"
+          width="500em"
+          height="500em"
           src="https://sketchfab.com/models/3b95672cf52545fca9943b87f04bdf92/embed"
         ></iframe>
         <p
@@ -44,7 +44,7 @@ function MainContent() {
             rel="nofollow"
             style={{ fontWeight: "bold", color: "#1CAAD9" }}
           >
-            AxolotlMascot
+            VGAxol, the Axolotl-Persona
           </a>{" "}
           by{" "}
           <a
