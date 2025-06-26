@@ -4,8 +4,6 @@ import Footer from "./Footer";
 
 function GalleryPage() {
   const galleryItems = [
-    { type: "image", src: "images/Summer Days, Drifting Away.png" },
-    { type: "image", src: "images/VRoidRender.png" },
     {
       type: "model",
       title: "Rowan, the Shadow Bone",
@@ -23,12 +21,12 @@ function GalleryPage() {
     },
     {
       type: "model",
-      title: "Rowan, the Corvid Vessel",
-      src: "https://sketchfab.com/models/1c649a62a95d47e190f0b54feeb6f53a/embed",
+      title: "Fiasco, the Raptor",
+      src: "https://sketchfab.com/models/2fdfa63f5ac7485eba7a6e1211e70423/embed",
+      thumbnail: "images/Fiasco.png",
     },
     { type: "image", src: "images/Fritter.png" },
     { type: "image", src: "images/Structor.png" },
-    { type: "image", src: "images/Fiasco.png" },
   ];
 
   const [displayedItem, setDisplayedItem] = useState(galleryItems[0]);
@@ -76,9 +74,16 @@ function GalleryPage() {
                 alignItems: "center",
                 justifyContent: "center",
                 cursor: "pointer",
+                overflow: "hidden",
               }}
             >
-              {item.type === "image" ? (
+              {item.thumbnail ? (
+                <img
+                  src={item.thumbnail}
+                  alt={item.title || `Item ${index + 1}`}
+                  style={{ width: "100px", height: "auto" }}
+                />
+              ) : item.type === "image" ? (
                 <img
                   src={item.src}
                   alt={`Item ${index + 1}`}
