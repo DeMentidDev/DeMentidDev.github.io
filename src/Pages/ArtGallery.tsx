@@ -46,13 +46,14 @@ function GalleryPage() {
               style={{ width: "100%", height: "auto" }}
             />
           ) : (
+            // For 3D models
             <iframe
               title={displayedItem.title}
               src={displayedItem.src}
               frameBorder="0"
               allow="autoplay; fullscreen; xr-spatial-tracking"
               allowFullScreen
-              style={{ width: "50em", height: "50em" }}
+              style={{ width: "25em", height: "25em" }}
             ></iframe>
           )}
         </div>
@@ -66,8 +67,8 @@ function GalleryPage() {
               key={index}
               onClick={() => setDisplayedItem(item)}
               style={{
-                width: "8em",
-                height: "8em",
+                width: "6em",
+                height: "6em",
                 border: "1px solid #ccc",
                 background: item.type === "image" ? "transparent" : "#eee",
                 display: "flex",
