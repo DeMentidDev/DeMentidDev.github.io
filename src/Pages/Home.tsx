@@ -22,12 +22,14 @@ function MainContent() {
           frameBorder="0"
           allowFullScreen={true}
           allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking
-          execution-while-out-of-viewport
-          execution-while-not-rendered
-          web-share
-          width="500em"
-          height="500em"
+          style={{
+            width: "80vw", // 80% of viewport width
+            height: "80vw", // keep square ratio
+            maxWidth: "600px",
+            maxHeight: "600px",
+            minWidth: "250px",
+            minHeight: "250px",
+          }}
           src="https://sketchfab.com/models/3b95672cf52545fca9943b87f04bdf92/embed"
         ></iframe>
         <p
