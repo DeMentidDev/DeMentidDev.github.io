@@ -156,6 +156,7 @@ ul {
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 1.25%;
+  text-align: center;
 }
 .grid-item {
   border: 0;
@@ -176,6 +177,7 @@ a:active {
 /* Gallery styles */
 .full-img {
   position: center;
+  text-align: center;
   display: block;
   width: 30%;
   height: 30%;
@@ -204,7 +206,7 @@ button {
 .thumb-bar img {
   display: block;
   width: 5%;
-  float: left;
+  float: center;
   position: center;
   cursor: pointer;
 }

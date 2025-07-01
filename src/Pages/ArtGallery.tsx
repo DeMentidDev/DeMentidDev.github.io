@@ -37,38 +37,62 @@ function GalleryPage() {
       <main>
         <h2>Artwork and Modeling</h2>
 
-        <div className="full-img" style={{ marginBottom: "2rem" }}>
+        <div
+          className="full-img"
+          style={{
+            marginBottom: "2rem",
+            textAlign: "center",
+          }}
+        >
           {displayedItem.type === "image" ? (
             <img
               src={displayedItem.src}
               alt="Displayed"
               className="displayed-img"
-              style={{ width: "100%", height: "auto" }}
+              style={{
+                width: "80vw",
+                maxWidth: "600px",
+                minWidth: "250px",
+                height: "auto",
+              }}
             />
           ) : (
-            // For 3D models
             <iframe
               title={displayedItem.title}
               src={displayedItem.src}
               frameBorder="0"
               allow="autoplay; fullscreen; xr-spatial-tracking"
               allowFullScreen
-              style={{ width: "25em", height: "25em" }}
+              style={{
+                width: "80vw",
+                maxWidth: "600px",
+                minWidth: "250px",
+                height: "80vw",
+                maxHeight: "600px",
+                minHeight: "250px",
+              }}
             ></iframe>
           )}
         </div>
 
         <div
           className="thumb-bar"
-          style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "10px",
+            justifyContent: "center",
+          }}
         >
           {galleryItems.map((item, index) => (
             <div
               key={index}
               onClick={() => setDisplayedItem(item)}
               style={{
-                width: "6em",
-                height: "6em",
+                width: "20vw",
+                maxWidth: "100px",
+                minWidth: "50px",
+                height: "auto",
                 border: "1px solid #ccc",
                 background: item.type === "image" ? "transparent" : "#eee",
                 display: "flex",
@@ -82,13 +106,13 @@ function GalleryPage() {
                 <img
                   src={item.thumbnail}
                   alt={item.title || `Item ${index + 1}`}
-                  style={{ width: "100px", height: "auto" }}
+                  style={{ width: "100%", height: "auto" }}
                 />
               ) : item.type === "image" ? (
                 <img
                   src={item.src}
                   alt={`Item ${index + 1}`}
-                  style={{ width: "100px", height: "auto" }}
+                  style={{ width: "100%", height: "auto" }}
                 />
               ) : (
                 <span style={{ fontSize: "0.75em", textAlign: "center" }}>
