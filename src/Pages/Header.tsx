@@ -14,7 +14,10 @@ function Header() {
             <Link to="/about">About</Link>
           </div>
           <div className="grid-item">
-            <Link to="/gallery">Gallery</Link>
+            <Link to="/code-gallery">Code</Link>
+          </div>
+          <div className="grid-item">
+            <Link to="/art-gallery">Artwork</Link>
           </div>
           <div className="grid-item">
             <Link to="/socials">Socials</Link>
