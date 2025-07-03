@@ -245,3 +245,14 @@ button {
   float: left;
   cursor: pointer;
 }
+
+.full-img p {
+  display: block;
+  width: 80vw;
+  max-width: 600px;
+  min-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0 1rem;
+}
