@@ -26,6 +26,39 @@ function CodePage() {
       <Header />
       <main>
         <h2>Coding Projects</h2>
+        <div
+          className="thumb-bar"
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "10px",
+            justifyContent: "left",
+            paddingBottom: "10px",
+          }}
+        >
+          {galleryItems.map((item, index) => (
+            <div
+              key={index}
+              onClick={() => setDisplayedItem(item)}
+              style={{
+                width: "20vw",
+                maxWidth: "150px",
+                minWidth: "100px",
+                border: "1px solid #304557",
+                cursor: "pointer",
+                padding: "0.5rem",
+                textAlign: "center",
+                backgroundImage:
+                  "linear-gradient( #304557 0%, #4d8986 5%, #7eb4b1 10%, #b5d1d9 20%, #7eb4b1 90%, #4d8986 95%, #304557 100%)",
+                textDecoration: "underline",
+                fontWeight:
+                  displayedItem.title === item.title ? "bold" : "normal",
+              }}
+            >
+              {item.title}
+            </div>
+          ))}
+        </div>
 
         <div
           className="full-img"
@@ -34,14 +67,6 @@ function CodePage() {
             textAlign: "center",
           }}
         >
-          <h3
-            style={{
-              fontWeight: "bold",
-            }}
-          >
-            {displayedItem.title}
-          </h3>
-
           <img
             src={displayedItem.src}
             alt={displayedItem.title}
@@ -67,37 +92,6 @@ function CodePage() {
           >
             {displayedItem.description}
           </p>
-        </div>
-
-        <div
-          className="thumb-bar"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "10px",
-            justifyContent: "center",
-          }}
-        >
-          {galleryItems.map((item, index) => (
-            <div
-              key={index}
-              onClick={() => setDisplayedItem(item)}
-              style={{
-                width: "20vw",
-                maxWidth: "150px",
-                minWidth: "100px",
-                border: "1px solid #ccc",
-                cursor: "pointer",
-                padding: "0.5rem",
-                textAlign: "center",
-                backgroundColor: "#f9f9f9",
-                fontWeight:
-                  displayedItem.title === item.title ? "bold" : "normal",
-              }}
-            >
-              {item.title}
-            </div>
-          ))}
         </div>
       </main>
       <Footer />

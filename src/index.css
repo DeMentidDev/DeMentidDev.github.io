@@ -195,7 +195,7 @@ a:active {
 button {
   border: 0;
   background: rgba(150, 150, 150, 0.6);
-  text-shadow: 0.0625em 0.0625em 0.0625em #f7f7f7;
+  text-shadow: 0.0625em 0.0625em 0.0625em #000000;
   border: 0.0625em solid #999;
   position: absolute;
   cursor: pointer;
@@ -227,17 +227,6 @@ button {
   width: 0;
   height: 0;
   background-color: rgba(0, 0, 0, 0);
-}
-
-button {
-  border: 0;
-  background: rgba(150, 150, 150, 0.6);
-  text-shadow: 1px 1px 1px #f7f7f7;
-  border: 1px solid #999;
-  position: absolute;
-  cursor: pointer;
-  top: 2px;
-  left: 2px;
 }
 
 .code-thumb-bar img {

@@ -96,13 +96,15 @@ function GalleryPage() {
                 maxWidth: "100px",
                 minWidth: "50px",
                 height: "auto",
-                border: "1px solid #ccc",
+                border: "1px solid #304557",
                 background: item.type === "image" ? "transparent" : "#eee",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 cursor: "pointer",
                 overflow: "hidden",
+                backgroundImage:
+                  "linear-gradient( #304557 0%, #4d8986 5%, #7eb4b1 10%, #b5d1d9 20%, #7eb4b1 90%, #4d8986 95%, #304557 100%)",
               }}
             >
               {item.thumbnail ? (
