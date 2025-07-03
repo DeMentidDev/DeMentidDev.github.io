@@ -57,10 +57,12 @@ function CodePage() {
           <p
             style={{
               marginTop: "0.5rem",
-              maxWidth: "600px",
               marginLeft: "auto",
               marginRight: "auto",
-              textAlign: "left",
+              textAlign: "center",
+              maxWidth: "80vw", // matches your image width
+              width: "100%",
+              padding: "0 1rem", // optional: adds side padding for readability on mobile
             }}
           >
             {displayedItem.description}
