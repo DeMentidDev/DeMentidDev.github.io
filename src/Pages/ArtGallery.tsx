@@ -8,16 +8,19 @@ function GalleryPage() {
       type: "model",
       title: "Rowan, the Shadow Bone",
       src: "https://sketchfab.com/models/ea55ca18496c40f391825b79f54f1634/embed",
+      thumbnail: "images/Deer.png",
     },
     {
       type: "model",
       title: "Red, the Moth",
       src: "https://sketchfab.com/models/b4d568bb582947baa15741881f95fa8d/embed",
+      thumbnail: "images/Moth.png",
     },
     {
       type: "model",
       title: "Tial, the Space-Lizard",
       src: "https://sketchfab.com/models/2efe2a851d2d4420a29de5edfb51b01d/embed",
+      thumbnail: "images/lizard.jpeg",
     },
     {
       type: "model",
@@ -25,8 +28,8 @@ function GalleryPage() {
       src: "https://sketchfab.com/models/2fdfa63f5ac7485eba7a6e1211e70423/embed",
       thumbnail: "images/Fiasco.png",
     },
-    { type: "image", src: "images/Fritter.png" },
-    { type: "image", src: "images/Structor.png" },
+    // { type: "image", src: "images/Fritter.png" },
+    // { type: "image", src: "images/Structor.png" },
   ];
 
   const [displayedItem, setDisplayedItem] = useState(galleryItems[0]);
