@@ -16,6 +16,12 @@ function CodePage() {
       description:
         "This is a website that uses an advanced language interpreter via python that takes the user's questions, looks for entries within the campus' IRB handbook (the bot's source material), and outputs a passage that applies to the given keywords best. I worked on backend through MongoDB, and assisted my two other partners when it came to connecting the chatbot to the website's backend, as well as sending that backend data to the frontend (website).",
     },
+    {
+      src: "/images/BubbleBlog.png",
+      title: "Simple Social Media Website",
+      description:
+        "This is a website that has a basic fontend-to-backend communication via Firebase/Firestore. The website allows for creating accounts, following, posts (including liking others' posts and deleting your own), as well as blocking and a report log.",
+    },
     // Add more items here as needed
   ];
 
