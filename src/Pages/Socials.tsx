@@ -8,6 +8,12 @@ function MainContent() {
         Instagram: <a href="https://example.com">[Placeholder Link]</a>
       </p> */}
       <p>
+        Wordpress:{" "}
+        <a href="https://dementiddev.wordpress.com/">
+            [dementiddev.wordpress.com/]
+        </a>
+      </p>
+      <p>
         Linkedin:{" "}
         <a href="https://www.linkedin.com/in/noah-d-cbu/">
           [www.linkedin.com/in/noah-d-cbu/]

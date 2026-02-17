@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <p>Last updated: 6/30/2025, NOAH DEMENT</p>
+      <p>Last updated: 2/16/2026, NOAH DEMENT</p>
     </footer>
   );
 }
